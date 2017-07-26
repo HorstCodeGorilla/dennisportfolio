@@ -23,6 +23,29 @@ body {
   height: 61.5%;
 }
 
+/*PAGECONTENT*/
+
+.page-content  {
+    overflow: scroll;
+    marging: 50px 50px 50px 50px;
+    text-align: center;
+
+}
+/*TOOLBAR*/
+.navbar {
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    position: relative;
+    margin: 0;
+    z-index: 500;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
 /* Your app custom files in this file */
 .view-left {
   border-right: 1px solid #b2b2b2;
@@ -34,6 +57,7 @@ body.with-panel-left-cover .panel.panel-left {
     transform: none;
 }
     .panel-left {
+        background-color: red;
         width: 0;
         transition: all .4s cubic-bezier(1, -0.34, 0, 1.18);
     }
@@ -49,6 +73,15 @@ body.with-panel-left-cover .panel.panel-left {
 .list-block .item-content {
     background-color: #E25054
 }
+
+*, ::after, ::before {
+    border-radius: 5px;
+    /*-webkit-box-sizing: inherit;*/
+    box-sizing: inherit;
+}
+
+
+
 .list-block .item-inner {
     color: #ffffff;
     background-color: #E25054;
