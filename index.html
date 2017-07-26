@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>CodeGorillaDoc</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.min.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+      <div class="wrapper">
+        <div class="canvas" id="new-body">
+            <!-- Status bar overlay for fullscreen mode-->
+            <div class="statusbar-overlay"></div>
+            <!-- Panels overlay-->
+            <div class="panel-overlay"></div>
+            <!-- Left panel with reveal effect-->
+            <div class="panel panel-left panel-cover">
+              <!-- Left view-->
+              <div class="view view-left navbar-through">
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="left"></div>
+                    <div class="center sliding">Left View</div>
+                    <div class="right"></div>
+                  </div>
+                </div>
+                <div class="pages">
+                  <div data-page="index-left" class="page">
+                    <div class="page-content">
+                      <div class="content-block-title">Menu</div>
+                      <div class="list-block">
+                        <ul>
+                          <li><a href="left-page-1.html" class="item-link">
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">Projects</div>
+                                </div>
+                              </div></a></li>
+                          <li><a href="left-page-2.html" class="item-link">
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">
+                                      <span class="red">Code</span>
+                                      <span class="green">Gorilla</span>
+                                      <span class="blue">Doc</span>
+                                </div>
+                                </div>
+                              </div></a></li>
+                                <li><a href="left-page-3.html" class="item-link">
+                                  <div class="item-content">
+                                    <div class="item-inner">
+                                      <div class="item-title">Hard skills</div>
+                                    </div>
+                                  </div></a></li>
+                                  <li><a href="left-page-3.html" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                            <div class="item-title">Soft skills</div>
+                                             </div>
+                                            </div></a></li>
+                                            </ul>
+                                          </div>
+                      <!-- <div class="content-block-title">Control Main View</div>
+                      <div class="list-block">
+                        <ul>
+                          <li><a href="about.html" data-view=".view-main" class="item-link close-panel">
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">About</div>
+                                </div>
+                              </div></a></li>
+                          <li><a href="services.html" data-view=".view-main" class="item-link close-panel">
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">Services</div>
+                                </div>
+                              </div></a></li>
+                          <li><a href="#" data-view=".view-main" class="back item-link close-panel">
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title">Back in history</div>
+                                </div>
+                              </div></a></li>
+                        </ul>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right panel with cover effect-->
+            <div class="panel panel-right panel-reveal">
+              <div class="content-block">
+                <p>Right panel content goes here</p>
+              </div>
+            </div>
+            <!-- Views-->
+            <div class="views">
+              <!-- Right view, it is main view-->
+              <div class="view view-main navbar-through">
+                <div class="navbar">
+                  <div class="navbar-inner">
+                    <div class="center sliding">Main page</div>
+                    <div class="right"><a href="#" data-panel="left" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+                  </div>
+                </div>
+                <!-- Pages-->
+                <div class="pages">
+                  <!-- Page, data-page contains page name-->
+                  <div data-page="index-1" class="page">
+                    <!-- Scrollable page content-->
+                    <div class="page-content"> Hellodennis
+                      <!-- <div class="content-block-title">Welcome</div>
+                      <div class="content-block">
+                        <div class="content-block-inner ">
+
+                          <p>Additional right panel is also available: <a href="#" data-panel="right" class="open-panel">right panel</a></p> -->
+                        </div>
+                      </div>
+                      <div class="list-block">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Path to Framework7 Library JS-->
+            <script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
+            <!-- Path to your app js-->
+            <script type="text/javascript" src="bower_components/framework7/dist/js/my-app.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</html>
